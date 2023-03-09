@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.nav-ul li{
+display: inline-block;
+padding: 5px;
+}
+.nav-ul li a{
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.nav-ul{
+  padding: 5px;
+  margin: 0px;
+  background-color: skyblue;
+
+}
+.nav-logo{
+  text-align: right;
+}
+
+
+
+/* CSS */
+.button{
+  display: block;
+  margin: 25px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 7px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.footer{
+  
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: skyblue;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+
+}
+.invalid-input{
+  color: red;
+  margin-left:-77%;
+  
+}
+.product-list{
+  text-align: center;
+
+}
+.product-list ul{
+  margin: 0;
+}
+.product-list ul li{
+  display: inline-block;
+  width: 150px;
+  border: 1px solid skyblue;
+  padding: 5px;
+}
+.delete-button{
+ height: 17px;
+ color: red;
+ cursor: pointer;
+}
+.update-button{
+  margin-top: 12px;
+  /* margin-right: 20px; */
+  color: blue;
+  cursor: pointer;
+}
+
+
+/* Form css */
+input[type=text],[type=email],[ type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid cyan;
+  border-radius: 4px;
+  resize: vertical;
+  /* background-color: gainsboro; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:black;
+}
+
+
+
+
+.register {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* Table css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
