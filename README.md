@@ -7,9 +7,8 @@ The goals of this project is that here company can manage the list of its produc
 2.Implement API endpoints for user authentication,data uploading,data browsing and data management.
 
 3.Add middleware to protect API end points that require authentication. implement logic to validate uploaded data and store in the database.
+![Signup](https://user-images.githubusercontent.com/99737235/233133881-a67e2625-81eb-4e4f-9bc3-09b024ddc502.png)
 
-![Signup](https://user-images.githubusercontent.com/99737235/233132163-b453fba2-49fe-499e-b555![Login](https://user-images.githubusercontent.com/99737235/233132177-39355c87-c008-481d-9fe9-a023cc896e0c.png)
--2865c7247e40.png)
 ![Login](https://user-images.githubusercontent.com/99737235/233133043-22c856c2-e6bf-4440-8bfd-8db20d7ad2ae.png)
 ![ProductList](https://user-images.githubusercontent.com/99737235/233133144-d404ad6d-6240-4e8a-b038-1b4492f2e1ae.png)
 
